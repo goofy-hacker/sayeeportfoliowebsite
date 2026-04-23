@@ -15,7 +15,7 @@ import Terminal from './components/Terminal';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sayeeportfoliowebsite">
       <ThemeProvider>
         <Routes>
           <Route path="/" element={<Home />} />

@@ -2,12 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useScrollSpy } from './hooks/useScrollSpy';
 import { ThemeProvider } from './contexts/ThemeContext';
 
-// Components
 import Navbar from './components/Navbar';
 import { Hero } from './components/Hero';
 import About from './components/About';
 import Work from './components/Work';
-import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AnimatedCursor from './components/AnimatedCursor';
@@ -27,7 +25,7 @@ function App() {
 }
 
 function Home() {
-  const sectionIds = ['home', 'about', 'work', 'skills', 'experience', 'contact'];
+  const sectionIds = ['home', 'about', 'work', 'skills', 'contact'];
   const activeSection = useScrollSpy(sectionIds, 100);
 
   return (
@@ -39,7 +37,6 @@ function Home() {
         <Hero />
         <About />
         <Work />
-        <Experience />
         <Contact />
       </main>
 

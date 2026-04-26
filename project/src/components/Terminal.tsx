@@ -197,9 +197,8 @@ export function Terminal() {
         content: (
           <div className="text-green-400 whitespace-pre-wrap">
             {createBox('Access Granted', [
-              'Welcome to Sayee terminal mode.',
+              'Welcome to the terminal mode.',
               'Type help to see available commands.',
-              'No buttons. Just old-school command line vibes.',
             ])}
           </div>
         ),
@@ -262,11 +261,11 @@ export function Terminal() {
       'Cisco Cyber Threat Management',
       'Cisco Endpoint Security',
       'MITx Cybersecurity for Critical Urban Infrastructure',
-      'CISA preparation in progress',
+      
     ]);
 
   const getContactData = () =>
-    createBox('Contact Sayee', [
+    createBox('Contact Sayee :', [
       'Email:    sayeeb1@umbc.edu',
       'Phone:    +1 (667) 802-9890',
       'Location: United States',

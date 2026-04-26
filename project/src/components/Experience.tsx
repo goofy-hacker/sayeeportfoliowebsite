@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
   }, []);
 
   return (
-    <section id="experience" className="bg-black/50 py-24">
+    <section id="work" className="bg-black/50 py-24">
       <div className="container mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="mx-auto mb-12 max-w-3xl text-center">

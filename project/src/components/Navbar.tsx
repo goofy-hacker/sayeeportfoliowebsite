@@ -15,6 +15,7 @@ const links: NavLink[] = [
   { title: '>_Home', href: '#home' },
   { title: '>_About', href: '#about' },
   { title: '>_Work', href: '#work' },
+  { title: '>_Projects', href: '#projects' },
   { title: '>_Skills', href: '#skills' },
   { title: '>_Contact', href: '#contact' },
 ];

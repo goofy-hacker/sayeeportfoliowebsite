@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import { Hero } from './components/Hero';
 import About from './components/About';
 import Work from './components/Work';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AnimatedCursor from './components/AnimatedCursor';
@@ -25,7 +26,7 @@ function App() {
 }
 
 function Home() {
-  const sectionIds = ['home', 'about', 'work', 'skills', 'contact'];
+  const sectionIds = ['home', 'about', 'work', 'projects', 'skills', 'contact'];
   const activeSection = useScrollSpy(sectionIds, 100);
 
   return (
@@ -36,6 +37,7 @@ function Home() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Work />
         <Contact />
       </main>

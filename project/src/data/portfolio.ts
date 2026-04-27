@@ -83,7 +83,7 @@ export const EXPERIENCES: Experience[] = [
     company: "DoIT – Maryland Public Service Commission",
     period: "Aug 2025 – Present",
     description:
-      ". Supporting cybersecurity governance and regulatory oversight for critical infrastructure and distributed energy environments.  . Contributing to risk assessments, third-party risk reviews, control gap analysis, incident response governance documentation, and audit program development aligned with NIST, COBIT, DOE/NARUC, and COMAR-related cybersecurity expectations."
+      "Supporting cybersecurity governance and regulatory oversight for critical infrastructure and distributed energy environments. Contributing to risk assessments, third-party risk reviews, control gap analysis, incident response governance documentation, and audit program development aligned with NIST, COBIT, DOE/NARUC, and COMAR-related cybersecurity expectations."
   },
   {
     id: 2,
@@ -91,7 +91,7 @@ export const EXPERIENCES: Experience[] = [
     company: "McKenzie Adams Financial Services",
     period: "Jul 2025 – Nov 2025",
     description:
-      ". Administered Microsoft 365 and Azure AD security controls for business users, supporting access reviews, RBAC validation, identity governance, and compliance automation.  . Built workflows to improve evidence collection, reduce manual tracking, and support audit readiness across security and compliance processes."
+      "Administered Microsoft 365 and Azure AD security controls for business users, supporting access reviews, RBAC validation, identity governance, and compliance automation. Built workflows to improve evidence collection, reduce manual tracking, and support audit readiness across security and compliance processes."
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Cybertection",
     period: "Mar 2025 – Jun 2025",
     description:
-      ". Conducted threat intelligence research, OSINT analysis, alert triage support, and MITRE ATT&CK-based reporting.  . Used Python and Splunk to support security alert enrichment and produce risk-prioritized intelligence summaries for ransomware, phishing, and emerging cyber threats."
+      "Conducted threat intelligence research, OSINT analysis, alert triage support, and MITRE ATT&CK-based reporting. Used Python and Splunk to support security alert enrichment and produce risk-prioritized intelligence summaries for ransomware, phishing, and emerging cyber threats."
   }
 ];
 

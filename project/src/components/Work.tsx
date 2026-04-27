@@ -15,7 +15,7 @@ const Work: React.FC = () => {
           </div>
           
           <p className="text-lg text-matrix-300 font-typewriter">
-            Here are some of my recent projects that showcase my skills and expertise in Deep Learning and Cybersecurity.
+            GRC, AI governance, and risk-focused work translating cybersecurity frameworks into real-world controls and measurable security outcomes.
           </p>
         </div>
         

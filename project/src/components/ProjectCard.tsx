@@ -10,7 +10,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div className="h-full rounded-xl bg-black/60 p-6 shadow-sm ring-1 ring-matrix-900 transition-all duration-300 hover:-translate-y-1 hover:ring-matrix-400 hover:shadow-lg">
       <div className="mb-4">
         <p className="mb-2 text-xs font-typewriter uppercase tracking-[0.25em] text-matrix-500">
-          case study
+          Project
         </p>
 
         <h3 className="text-xl font-typewriter text-matrix-400 leading-snug">

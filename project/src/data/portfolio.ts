@@ -10,8 +10,8 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  level: number; // 1-5
-  category: 'offensive' | 'defensive' | 'tools' | 'other';
+  level: number;
+  category: 'grc' | 'risk' | 'compliance' | 'security' | 'tools';
 }
 
 export interface Experience {
@@ -25,51 +25,55 @@ export interface Experience {
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "AI Governance Risk Assessment",
-    description: "Developed an AI governance risk assessment using NIST AI RMF, NIST CSF 2.0, and ISO 27001. Identified AI-specific risks and defined audit-ready controls for bias, data protection, and third-party vendor risk.",
-    tags: ["NIST AI RMF", "ISO 27001", "NIST CSF 2.0", "GRC"],
-    image: "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "AI Governance & Risk Control Mapping",
+    description:
+      "Built an AI governance risk assessment model focused on responsible AI, data protection, bias, third-party AI tools, and audit readiness. Mapped AI risks to NIST AI RMF, NIST CSF 2.0, ISO 27001, and control evidence requirements to help organizations evaluate AI adoption more safely.",
+    tags: ["AI Governance", "NIST AI RMF", "NIST CSF 2.0", "ISO 27001", "Risk Controls"],
+    image: "",
     link: "#",
   },
   {
     id: 2,
-    title: "DER Cybersecurity Audit Program",
-    description: "Designed a risk-based audit program for 200+ Distributed Energy Resources and Virtual Power Plants, incorporating COBIT-aligned control objectives and checks for privacy, secure communications, and coordination with Electric Distribution Companies.",
-    tags: ["COBIT", "NIST 800-53", "Critical Infrastructure", "Audit"],
-    image: "https://images.pexels.com/photos/5380659/pexels-photo-5380659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Critical Infrastructure Cyber Risk Assessment",
+    description:
+      "Supported risk assessment work for critical infrastructure environments by identifying governance gaps, high-risk control areas, and stakeholder coordination needs. Focused on DERs, VPPs, audit controls, incident response governance, and cybersecurity oversight using NIST and DOE/NARUC-aligned guidance.",
+    tags: ["Critical Infrastructure", "NIST 800-30", "DOE/NARUC", "Audit Readiness", "GRC"],
+    image: "",
     link: "#",
   },
   {
     id: 3,
-    title: "Threat Intelligence Automation",
-    description: "Built Python and Splunk automation to triage and enrich 500+ daily security alerts, producing a risk-prioritized alert queue. Reduced analyst triage effort by 15% and produced MITRE ATT&CK-mapped reports on ransomware and phishing campaigns.",
-    tags: ["Python", "Splunk", "MITRE ATT&CK", "OSINT"],
-    image: "https://images.pexels.com/photos/5380803/pexels-photo-5380803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Third-Party Risk & Compliance Review",
+    description:
+      "Created a structured third-party risk review approach for evaluating vendor security posture, access exposure, control ownership, and compliance evidence. The work emphasized risk scoring, documentation quality, remediation tracking, and executive-friendly reporting.",
+    tags: ["TPRM", "Vendor Risk", "Risk Scoring", "Control Evidence", "Compliance"],
+    image: "",
     link: "#",
   },
   {
     id: 4,
-    title: "M365 Compliance Automation",
-    description: "Designed and implemented 15+ compliance automation workflows using Power Automate and Microsoft Copilot to support access review tracking, evidence collection, and control status reporting — reducing manual compliance effort by 10+ hours per week.",
-    tags: ["Power Automate", "Azure AD", "RBAC", "Zero Trust"],
-    image: "https://images.pexels.com/photos/5380635/pexels-photo-5380635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "M365 Access Governance & Automation",
+    description:
+      "Designed compliance automation workflows for access reviews, RBAC validation, evidence collection, and control status reporting across Microsoft 365 and Azure AD environments. Reduced manual compliance tracking effort while improving visibility into identity and access risks.",
+    tags: ["M365 Security", "Azure AD", "RBAC", "Power Automate", "Zero Trust"],
+    image: "",
     link: "#",
   }
 ];
 
 export const SKILLS: Skill[] = [
-  { name: "NIST CSF 2.0 / 800-53", level: 5, category: "tools" },
-  { name: "ISO/IEC 27001", level: 5, category: "tools" },
-  { name: "Third-Party Risk (TPRM)", level: 5, category: "defensive" },
-  { name: "Audit Program Design", level: 4, category: "defensive" },
-  { name: "Risk Quantification", level: 4, category: "defensive" },
-  { name: "Zero Trust / IAM", level: 4, category: "defensive" },
+  { name: "NIST CSF 2.0 / 800-53", level: 5, category: "grc" },
+  { name: "NIST AI RMF", level: 4, category: "grc" },
+  { name: "ISO/IEC 27001", level: 5, category: "compliance" },
+  { name: "Third-Party Risk Management", level: 5, category: "risk" },
+  { name: "Audit Readiness & Control Mapping", level: 5, category: "compliance" },
+  { name: "Risk Assessment / Risk Register", level: 5, category: "risk" },
+  { name: "AI Governance & Responsible AI", level: 4, category: "grc" },
+  { name: "Zero Trust / IAM / RBAC", level: 4, category: "security" },
   { name: "Azure AD / M365 Security", level: 4, category: "tools" },
-  { name: "MITRE ATT&CK", level: 4, category: "offensive" },
-  { name: "Python / Splunk", level: 4, category: "tools" },
-  { name: "Threat Intelligence", level: 4, category: "offensive" },
-  { name: "Incident Response", level: 3, category: "defensive" },
-  { name: "COBIT / DOE/NARUC", level: 4, category: "tools" },
+  { name: "Power BI / Power Automate", level: 4, category: "tools" },
+  { name: "Python / SQL", level: 4, category: "tools" },
+  { name: "COBIT / DOE/NARUC", level: 4, category: "grc" },
 ];
 
 export const EXPERIENCES: Experience[] = [
@@ -78,27 +82,31 @@ export const EXPERIENCES: Experience[] = [
     role: "Cybersecurity GRC Analyst Intern",
     company: "DoIT – Maryland Public Service Commission",
     period: "Aug 2025 – Present",
-    description: "Supporting statewide cybersecurity governance and regulatory oversight for 200+ Distributed Energy Resources (DERs), VPPs, and DER Aggregators. Led third-party vendor risk assessments, conducted NIST SP 800-30 risk assessments across three critical infrastructure domains identifying 12+ high-risk control gaps, and designed components of a COBIT-aligned audit program. Contributed to incident response governance documentation, improving cross-stakeholder coordination efficiency by 30%."
+    description:
+      ". Supporting cybersecurity governance and regulatory oversight for critical infrastructure and distributed energy environments.  . Contributing to risk assessments, third-party risk reviews, control gap analysis, incident response governance documentation, and audit program development aligned with NIST, COBIT, DOE/NARUC, and COMAR-related cybersecurity expectations."
   },
   {
     id: 2,
     role: "Technical Administrator",
     company: "McKenzie Adams Financial Services",
     period: "Jul 2025 – Nov 2025",
-    description: "Administered Microsoft 365 and Azure AD security controls for 150+ users across 10+ business functions, aligned with NIST CSF, ISO/IEC 27001 Annex A, and COBIT. Executed quarterly access reviews and RBAC validation, remediating 35% of excess permissions. Designed 15+ compliance automation workflows using Power Automate, reducing manual compliance effort by 10+ hours per week."
+    description:
+      ". Administered Microsoft 365 and Azure AD security controls for business users, supporting access reviews, RBAC validation, identity governance, and compliance automation.  . Built workflows to improve evidence collection, reduce manual tracking, and support audit readiness across security and compliance processes."
   },
   {
     id: 3,
     role: "Cyber Threat Intelligence Intern",
     company: "Cybertection",
     period: "Mar 2025 – Jun 2025",
-    description: "Conducted OSINT and dark-web threat hunting using SpiderFoot, reducing IOC detection time by 40%. Built Python and Splunk automation to triage and enrich 500+ daily security alerts. Produced MITRE ATT&CK-mapped intelligence reports on ransomware and phishing campaigns, improving SOC response speed by 25%."
+    description:
+      ". Conducted threat intelligence research, OSINT analysis, alert triage support, and MITRE ATT&CK-based reporting.  . Used Python and Splunk to support security alert enrichment and produce risk-prioritized intelligence summaries for ransomware, phishing, and emerging cyber threats."
   }
 ];
 
 export const ABOUT = {
   name: "Sayee",
-  title: "GRC & Cybersecurity Specialist",
-  description: "GRC Analyst · Risk & Compliance · Critical Infrastructure Security",
-  longDescription: "MS Cybersecurity student at University of Maryland (GPA 4.0) specializing in regulatory governance, third-party risk, and audit readiness for critical infrastructure. I have hands-on experience implementing NIST CSF 2.0, NIST 800-53/800-30, ISO 27001, and DOE/NARUC cybersecurity frameworks — turning complex compliance requirements into clear, audit-ready controls."
+  title: "GRC & AI Governance Cybersecurity Specialist",
+  description: "GRC Analyst · AI Risk · Compliance · Critical Infrastructure Security",
+  longDescription:
+    "MS Cybersecurity student at University of Maryland with hands-on experience in cybersecurity governance, AI risk, third-party risk, audit readiness, and critical infrastructure security. I work at the intersection of GRC, AI governance, and security compliance, translating frameworks like NIST CSF 2.0, NIST 800-53/800-30, NIST AI RMF, ISO 27001, COBIT, and DOE/NARUC guidance into practical controls, risk assessments, and evidence-driven security improvements."
 };

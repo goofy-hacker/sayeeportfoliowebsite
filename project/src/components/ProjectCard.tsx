@@ -7,38 +7,36 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="group relative h-80 w-full overflow-hidden rounded-xl bg-black/50 shadow-md transition-all duration-300 hover:shadow-xl ring-1 ring-matrix-900">
-      {/* Project Image with Overlay */}
-      <div className="absolute inset-0 overflow-hidden">
-        <img 
-          src={project.image} 
-          alt={project.title} 
-          className="h-full w-full object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-matrix-900/40 opacity-70 transition-opacity duration-300 group-hover:opacity-90"></div>
+    <div className="h-full rounded-xl bg-black/60 p-6 shadow-sm ring-1 ring-matrix-900 transition-all duration-300 hover:-translate-y-1 hover:ring-matrix-400 hover:shadow-lg">
+      <div className="mb-4">
+        <p className="mb-2 text-xs font-typewriter uppercase tracking-[0.25em] text-matrix-500">
+          case study
+        </p>
+
+        <h3 className="text-xl font-typewriter text-matrix-400 leading-snug">
+          {project.title}
+        </h3>
       </div>
-      
-      {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-end p-6 text-matrix-400">
-        <h3 className="mb-2 text-xl font-bold tracking-tight">{project.title}</h3>
-        <p className="mb-3 line-clamp-2 text-sm text-matrix-300">{project.description}</p>
-        
-        {/* Tags */}
-        <div className="mb-4 flex flex-wrap gap-2">
+
+      <p className="text-sm font-typewriter leading-relaxed text-matrix-300">
+        {project.description}
+      </p>
+
+      <div className="mt-5">
+        <p className="mb-3 text-xs font-typewriter uppercase tracking-[0.2em] text-matrix-500">
+          Skills & Frameworks
+        </p>
+
+        <div className="flex flex-wrap gap-2">
           {project.tags.map((tag, index) => (
-            <span key={index} className="rounded-full bg-matrix-900/30 px-2.5 py-0.5 text-xs text-matrix-400 backdrop-blur-sm">
+            <span
+              key={index}
+              className="border border-matrix-700 bg-matrix-900/20 px-2.5 py-1 text-xs font-typewriter text-matrix-400"
+            >
               {tag}
             </span>
           ))}
         </div>
-        
-        {/* View Project Button */}
-        <a 
-          href={project.link || '#'} 
-          className="transform rounded-full bg-matrix-500 px-4 py-2 text-center text-sm font-semibold text-black shadow-lg transition-all duration-300 hover:bg-matrix-400"
-        >
-          View Project
-        </a>
       </div>
     </div>
   );

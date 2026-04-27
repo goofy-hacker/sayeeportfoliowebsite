@@ -108,5 +108,5 @@ export const ABOUT = {
   title: "GRC & AI Governance Cybersecurity Specialist",
   description: "GRC Analyst · AI Risk · Compliance · Critical Infrastructure Security",
   longDescription:
-    "MS Cybersecurity student at University of Maryland with hands-on experience in cybersecurity governance, AI risk, third-party risk, audit readiness, and critical infrastructure security. I work at the intersection of GRC, AI governance, and security compliance, translating frameworks like NIST CSF 2.0, NIST 800-53/800-30, NIST AI RMF, ISO 27001, COBIT, and DOE/NARUC guidance into practical controls, risk assessments, and evidence-driven security improvements."
+    "Cybersecurity GRC Analyst supporting governance, risk, and compliance initiatives in public sector and critical infrastructure environments. Focused on AI governance, third-party risk, and audit readiness, with experience translating NIST, ISO 27001, and DOE/NARUC frameworks into practical controls and risk-driven security outcomes."
 };
